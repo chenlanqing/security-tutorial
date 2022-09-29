@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>OAuth-Client</title>
+</head>
+<body>
+这是OAuth 授权登录
+
+<a href="http://localhost:8080/oauth/authorize?client_id=java&response_type=code&scope=all&redirect_uri=http://localhost:8082/index.html">第三方登录</a>
+
+<h1 th:text="${msg}"></h1>
+</body>
+</html>
